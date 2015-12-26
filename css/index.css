@@ -1,0 +1,75 @@
+
+
+header {
+ color:white;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 3em;
+
+}
+
+.precontainer{
+  background-color: black;
+  height: 50px;
+
+
+}
+.container {
+  background-color: black;
+  height: 50px;
+
+
+}
+
+.nav li {
+
+  display:inline;
+  color: #F2F0F5;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  margin:0px 5px 5px 150px;
+
+
+}
+
+p {
+
+  color: white;
+
+
+}
+
+a  {
+  float:right;
+  color: white;
+  font-size: 14;
+  font-family: 'Quicksand', sans-serif;
+  text-align: right;
+
+
+}
+
+.container2 {
+  background-color: rgb(188,214,239);
+
+}
+
+body {
+   background-color:rgb(102,127,153);
+
+}
+
+div{
+  background-color: white;
+}
+
+img.align-center {
+  display:block;
+  margin: 0px auto;
+
+}
+img.large {
+  padding-left: 100px;
+  width: 900px;
+  height: 400px;
+
+}
