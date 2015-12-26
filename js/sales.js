@@ -1,3 +1,4 @@
+
 dailyCookiePush = [];
 function removr(){
 var removeX = document.getElementsByTagName('span')[0];
@@ -92,4 +93,43 @@ function tablr(){
 
   } }} ;
 
-  tablr();
+var handleCommentSubmit = function(event) {
+  console.log(event);
+  event.preventDefault();
+  newShopList =[];
+  userInput =[];
+
+  userInput.unshift(event.target.name.value);
+  userInput.unshift(parseInt(event.target.minCustomer.value));
+  userInput.unshift(parseInt(event.target.maxCustomer.value));
+  userInput.unshift(parseInt(event.target.avgCustomer.value));
+
+console.log(userInput);
+newShopList.unshift(userInput[4]);
+
+userInput.reverse();
+console.log(userInput);
+
+var newShop = new CookieShop(userInput[0], userInput[1], userInput[2], userInput[3]);
+
+console.log(newShop.avgCustomer);
+console.log(newShop);
+console.log(newShop.name);
+console.log(newShop.hourlyCookies);
+console.log(newShop.hourlyCookies[0]);
+
+console.table(shops);
+
+removr();
+tablr();
+
+event.target.name.value = null;
+event.target.minCustomer.value = null;
+event.target.maxCustomer.value = null;
+event.target.avgCustomer.value = null
+
+};
+
+infoForm.addEventListener("submit", handleCommentSubmit);
+
+tablr();
